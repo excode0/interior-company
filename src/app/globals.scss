@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-rgb: 26 29 33;
+  --backgroundSecond-rgb: 15 16 19;
+  --foreground-rgb: 26 26 26;
+  --primary-rgb: 228 188 57;
+  --secondary-rgb: 207 159 77;
+  --text-rgb: 248 248 248;
+  --textSecondary-rgb: 125 125 125;
+  --textThird-rgb: 210 210 210;
+}
+
+@font-face {
+  font-family: 'PrimaryTitleFont';
+  src: url('/fonts/BodoniModa.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SecondaryTitleFont';
+  src: url('/fonts/SackersGothicStdHeavy.woff2') format('woff2'),
+    url('/fonts/SackersGothicStdHeavy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BodyTextFont';
+  src: url('/fonts/LibreBaskerville-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DisplayFont';
+  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Scroll bar default */
+/* Mengatur keseluruhan scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Lebar scroll bar */
+  background-color: #f5f5f5; /* Warna background scroll */
+}
+
+/* Mengatur bagian scroll yang bisa digeser */
+::-webkit-scrollbar-thumb {
+  background-color: #e4bc39; /* Warna thumb */
+  border-radius: 10px; /* Membuat sudut scroll bar lebih halus */
+  border: 2px solid #f5f5f5; /* Border untuk memberikan padding ke thumb */
+}
+
+/* Scroll bar saat dihover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffd700; /* Warna saat dihover */
+}
+
+/* Scroll bar di bagian yang lebih sempit seperti textarea atau div */
+::-webkit-scrollbar-corner {
+  background-color: #333333; /* Warna untuk pojok scroll */
+}
+
+/* Custom scrollbar for modern browsers */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #888 transparent; /* Firefox */
+}
+
+/* WebKit browsers (Chrome, Safari, etc.) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Set width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color on hover */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* Background of the scrollbar track */
+}
